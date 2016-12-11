@@ -1,0 +1,8 @@
+jupyter:
+  image: jupyter/datascience-notebook
+  ports:
+    - 8889:8888
+  volumes:
+    - .:/home/jovyan/work
+  environment:
+    - GRANT_SUDO=yes
